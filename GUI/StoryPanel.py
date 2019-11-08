@@ -4,9 +4,10 @@ from functools import partial
 from time import sleep
 import io
 import csv
+import os
 
-#import GUIFuncs
-
+mainDir = os.getcwd()
+loc = mainDir + '\\loc.csv'
 
 class StoryPanel:
     def __init__(self, parent):
@@ -80,7 +81,7 @@ class StoryPanel:
 
 
     def applyStoryText(self, parent):
-        with io.open('loc.csv') as loc_file:
+        with open(loc) as loc_file:
             loc_reader = csv.reader(loc_file, delimiter=';')
             for entry in loc_reader:
                 if entry[0] == '10':
