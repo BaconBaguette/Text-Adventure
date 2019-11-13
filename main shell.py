@@ -14,7 +14,7 @@ from Funcs.locChoice import locChoice
 from Funcs.locIntro import locIntro
 from Funcs.locShowChoices import locShowChoices
 from Funcs.splitOutcome import splitOutcome
-from Funcs.BarrywinCheck import winCheck
+from Funcs.winCheck import winCheck
 
 ##		Initializing the player		##
 player = Player()
