@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 from functools import partial
 from time import sleep
+from GUI.NameEntry import NameEntry
 import io
 import csv
 import os
@@ -11,7 +12,7 @@ loc = mainDir + '\\loc.csv'
 
 class StoryPanel:
     def __init__(self, parent):
-
+        NameEntry(parent, 'player')
         #guifuncs = GUIFuncs.GUIfuncs(parent)
         self.parent = parent
 
